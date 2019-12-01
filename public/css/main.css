@@ -1,8 +1,2 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+@import url("https://use.typekit.net/lvw5yxy.css");.row{max-width:1400px;margin:0 auto;padding:10px}#driver1,#driver2{max-width:450px;margin-bottom:80px;display:flex}#driver1 .carCon,#driver1 .driverInfo,#driver2 .carCon,#driver2 .driverInfo{max-width:220px}#driver1 .number,#driver2 .number{font-family:abolition,sans-serif;color:#efe34c;font-size:40px;text-align:center;margin-bottom:20px}#driver1 .grid,#driver2 .grid{max-width:180px;display:block;margin:0 auto}#driver1 .car,#driver2 .car{max-height:300px;width:200px}@media screen and (min-width: 800px){.row{display:flex;flex-direction:row;justify-content:space-between}.row .car{width:200px}}.hidden{display:none}body{background-color:#737574}.title{max-width:350px;margin:0 auto;display:block;margin:0 auto;margin-top:80px;margin-bottom:70px}
+/*# sourceMappingURL=main.css.map */
