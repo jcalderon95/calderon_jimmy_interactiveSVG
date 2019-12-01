@@ -11,16 +11,16 @@ router.get('/', function(req, res, next) {
     
 });
 
-router.get('/drivers/', function(req, res, next) {
+router.get('/drivers/:id', function(req, res, next) {
 
-  let query = `SELECT * FROM tbl_driver`;
+  let query = `SELECT * FROM tbl_driver WHERE ID="${req.params.id}"`;
 
     sql.query(query, (err, result) => {
         if (err) { throw err; console.log(err); }
 
         console.log(result); // should see objects wrapped in an array
 
-       res.json(result);
+       res.json(result[0]);
        
     })
     
