@@ -12,11 +12,11 @@
                     .then(data => {
                     console.log(data);
                     this.element.children[1].innerHTML += `
-                    <h2>${data.Name}</h2>
-                    <h3>${data.Number}</h3>
-                    <h3>${data.Nationality}</h3>
-                    <h3>${data.Team}</h3>
-                    <h3>${data.Points}</h3>
+                    <h2 class="driverName">${data.Name}</h2>
+                    <h3 class="info">NUMBER: <span class="data">${data.Number}</span></h3>
+                    <h3 class="info">NATIONALITY: <span class="data">${data.Nationality}</span></h3>
+                    <h3 class="info">TEAM: <span class="data">${data.Team}</span></h3>
+                    <h3 class="info">POINTS: <span class="data">${data.Points}</span></h3>
                     `
                     
                     })
@@ -27,32 +27,6 @@
         offset: '20%'
       })
 
-      const waypoint2 = new Waypoint({
-        element: document.getElementById('driver2'),
-        handler: function() {
-            console.log('Scrolled to waypoint!')
-            let url = `/drivers/${this.element.id.slice(6)}`;
-
-                fetch(url)
-                    .then(res => res.json())
-                    .then(data => {
-                    console.log(data);
-                    this.element.children[1].innerHTML += `
-                    <h2>${data.Name}</h2>
-                    <h3>${data.Number}</h3>
-                    <h3>${data.Nationality}</h3>
-                    <h3>${data.Team}</h3>
-                    <h3>${data.Points}</h3>
-                    `
-                    
-                    })
-                    .catch((err) => console.log(err));
-            
-            this.destroy()
-
-        },
-        offset: '40%'
-      })
-
+      
 
 })();

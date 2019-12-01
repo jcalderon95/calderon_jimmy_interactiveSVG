@@ -14,24 +14,62 @@
         max-width: 220px;
     }
 
-    .number{
-        font-family: $main-font;
-        color: #efe34c;
-        font-size: 40px;
-        text-align: center;
-        margin-bottom: 20px;
+    .carCon{
+
+        .number{
+            font-family: $main-font;
+            color: #efe34c;
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        .grid{
+            max-width: 180px;
+            display: block;
+            margin: 0 auto;
+        }
+    
+        .car{
+            max-height: 300px;
+            width: 200px;
+        }
+
     }
 
-    .grid{
-        max-width: 180px;
-        display: block;
-        margin: 0 auto;
-    }
+    .driverInfo{
+        margin-top: 60px;
+        margin-left: 20px;
 
-    .car{
-        max-height: 300px;
-        width: 200px;
+        .driverName{
+            background-color: #ba2025;
+            height: 45px;
+            color: #ffffff;
+            font-size: 33px;
+            text-align: center;
+            font-family: $main-font;
+            font-style: oblique;
+            width: 200px;
+            padding-top: 10px;
+            border-radius: 2px;
+            letter-spacing: 1.3px;
+            margin-bottom: 30px;
+        }
+
+        .info{
+            margin-bottom: 30px;
+            color: #b3b2b2;
+            font-family: $main-font;
+            font-size: 25px;
+            letter-spacing: 1px;
+
+            .data{
+                color: #ffffff;
+                margin-left: 10px;
+            }
+        }
     }
+    
 }
 
 
