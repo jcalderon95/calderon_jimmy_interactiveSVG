@@ -37,17 +37,20 @@
             display: block;
             margin: 0 auto;
         }
-    
-        .car{
+        
+        .imageContainer{
             max-height: 300px;
             width: 200px;
-            display: none;
             margin: 0 auto;
-        }
 
-        .car-on{
-            display: block;
+            .car{
+                max-height: 300px;
+                width: 200px;
+                margin: 0 auto;
+            }
         }
+    
+        
 
     }
 
