@@ -37,19 +37,20 @@
         }
     
         .grid{
-            width: 200px;
+            max-width: 200px;
             display: block;
             margin: 0 auto;
         }
         
         .imageContainer{
             max-height: 300px;
-            width: 200px;
+            max-width: 200px;
             margin: 0 auto;
 
             .car{
                 max-height: 300px;
-                width: 200px;
+                max-width: 200px;
+                display: block;
                 margin: 0 auto;
             }
         }
@@ -64,14 +65,15 @@
 
         .driverName{
             background-color: #ba2025;
-            height: 45px;
+            //height: 30px;
             color: #ffffff;
-            font-size: 33px;
+            font-size: 20px;
             text-align: center;
             font-family: $main-font;
             font-style: oblique;
-            width: 200px;
-            padding-top: 10px;
+            max-width: 213px;
+            padding-top: 12px;
+            padding-bottom: 12px;
             border-radius: 2px;
             letter-spacing: 1.3px;
             margin-bottom: 30px;
@@ -81,12 +83,12 @@
             margin-bottom: 30px;
             color: #b3b2b2;
             font-family: $main-font;
-            font-size: 25px;
+            font-size: 15px;
             letter-spacing: 1px;
 
             .data{
                 color: #ffffff;
-                margin-left: 8px;
+                margin-left: 2px;
             }
         }
 
@@ -95,6 +97,51 @@
     
 }
 
+@media screen and (min-width: 410px){
+	.driver{
+    
+        .driverInfo{
+    
+            .driverName{
+                font-size: 25px;
+            }
+    
+            .info{
+                font-size: 20px;
+                letter-spacing: 1px;
+    
+                .data{
+                    color: #ffffff;
+                    margin-left: 8px;
+                }
+            }
+    
+            
+        }
+        
+    }
+
+}
+
+@media screen and (min-width: 470px){
+	.driver{
+    
+        .driverInfo{
+    
+            .driverName{
+                font-size: 33px;
+            }
+    
+            .info{
+                font-size: 25px;
+            }
+    
+            
+        }
+        
+    }
+
+}
 
 @media screen and (min-width: 1000px){
 	.row{
