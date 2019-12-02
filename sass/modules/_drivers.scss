@@ -1,17 +1,25 @@
 .row{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 10px;
+    margin-bottom: 50px;
 }
 
-#driver1, #driver2{
+
+.driver{
 
     max-width: 450px;
-    margin-bottom: 80px;
+    height: 400px;
+    //margin-bottom: 80px;
     display: flex;
+    margin: 0 auto;
+
+    &:nth-child(even){
+        margin-top: 100px;
+    }
 
     .carCon, .driverInfo{
-        max-width: 220px;
+        width: 220px;
     }
 
     .carCon{
@@ -25,7 +33,7 @@
         }
     
         .grid{
-            max-width: 180px;
+            width: 200px;
             display: block;
             margin: 0 auto;
         }
@@ -33,6 +41,12 @@
         .car{
             max-height: 300px;
             width: 200px;
+            display: none;
+            margin: 0 auto;
+        }
+
+        .car-on{
+            display: block;
         }
 
     }
@@ -73,16 +87,14 @@
 }
 
 
-// @media screen and (min-width: 800px){
-// 	.row{
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
+@media screen and (min-width: 1000px){
+	.row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-//         .car{
-//             width: 200px;
-
-            
-//         }
-//     }
-// }
+        .driver:nth-child(even){
+            margin-top: 150px;
+        }
+    }
+}
